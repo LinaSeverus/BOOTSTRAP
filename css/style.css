@@ -469,12 +469,16 @@ header .navbar .collapse li .btn:hover {
 }
 .how_it_works_block .work-item {
   text-align: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  position: relative;
+  padding: 100px 15px;
 }
-.how_it_works_block .work-item img {
+.how_it_works_block .work-item .img-1, .how_it_works_block .work-item .img-3 {
   margin-bottom: 90px;
+}
+.how_it_works_block .work-item .img-2 {
+  margin-bottom: 85px;
+}
+.how_it_works_block .work-item .img-4 {
+  margin-bottom: 84px;
 }
 .how_it_works_block .work-item h4 {
   font-family: "Lato", sans-serif;
@@ -500,9 +504,32 @@ header .navbar .collapse li .btn:hover {
   transition: 0.3s;
 }
 
-@media (max-width: 990px) {
+@media (max-width: 900px) {
   .how_it_works_block {
     padding: 50px 0;
+  }
+  .how_it_works_block .how-it-works-article p {
+    margin-bottom: 0;
+  }
+  .how_it_works_block .work-item {
+    padding: 50px 15px;
+  }
+}
+@media (max-width: 320px) {
+  .how_it_works_block .work-item {
+    padding: 25px 15px;
+  }
+  .how_it_works_block .work-item .img-1, .how_it_works_block .work-item .img-3 {
+    margin-bottom: 50px;
+  }
+  .how_it_works_block .work-item .img-2 {
+    margin-bottom: 45px;
+  }
+  .how_it_works_block .work-item .img-4 {
+    margin-bottom: 44px;
+  }
+  .how_it_works_block .get-start-now-btn {
+    width: 100%;
   }
 }
 .happy_clients_block {
